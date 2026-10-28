@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase | Online Shopping</title>
+
+    <link rel="stylesheet" href="shoping.css">
+</head>
+
+<body>
+
+    <!-- Top Announcement -->
+    <div class="announcement">
+        🎉 Mega Shopping Sale! Get up to 50% OFF on selected products.
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                Shop<span>Ease</span>
+            </a>
+
+            <form class="search-bar" action="#" method="get">
+                <label class="visually-hidden" for="search">Search products</label>
+
+                <input
+                    type="search"
+                    id="search"
+                    name="q"
+                    placeholder="Search for products..."
+                >
+
+                <button type="submit" aria-label="Search">🔍</button>
+            </form>
+
+            <div class="nav-actions">
+                <a href="#categories">Categories</a>
+                <a href="#products">Products</a>
+                <a href="#deals">Deals</a>
+                <a href="#footer">Contact</a>
+                <a href="#products" class="cart-button">🛒 Cart</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Hero Banner -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">THE BIG SHOPPING FESTIVAL</span>
+
+                <h1>
+                    Upgrade Your Style.<br>
+                    <span>Upgrade Your Life.</span>
+                </h1>
+
+                <p>
+                    Discover amazing products, unbeatable prices,
+                    and exciting deals all in one place.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#products" class="primary-button">
+                        Shop Now →
+                    </a>
+
+                    <a href="#categories" class="secondary-button">
+                        Explore Categories
+                    </a>
+                </div>
+
+                <div class="hero-offer">
+                    <strong>50% OFF</strong>
+                    <span>On selected products</span>
+                </div>
+
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="hero-circle"></div>
+                <div class="hero-emoji">🛍️</div>
+                <div class="floating-tag">MEGA SALE</div>
+            </div>
+
+        </section>
+
+        <!-- Shopping Benefits -->
+        <section class="benefits">
+
+            <article class="benefit">
+                <span>🚚</span>
+                <div>
+                    <h3>Free Delivery</h3>
+                    <p>On eligible orders</p>
+                </div>
+            </article>
+
+            <article class="benefit">
+                <span>🔒</span>
+                <div>
+                    <h3>Secure Shopping</h3>
+                    <p>Shop with confidence</p>
+                </div>
+            </article>
+
+            <article class="benefit">
+                <span>↩️</span>
+                <div>
+                    <h3>Easy Returns</h3>
+                    <p>Simple return process</p>
+                </div>
+            </article>
+
+            <article class="benefit">
+                <span>💬</span>
+                <div>
+                    <h3>Customer Support</h3>
+                    <p>We're here to help</p>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Categories -->
+        <section class="section categories" id="categories">
+
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">SHOP BY CATEGORY</p>
+                    <h2>Explore Categories</h2>
+                </div>
+
+                <a href="#products" class="view-all">View Products →</a>
+            </div>
+
+            <div class="category-grid">
+
+                <a href="#electronics" class="category-card">
+                    <div class="category-icon electronics-icon">🎧</div>
+                    <h3>Electronics</h3>
+                    <p>Smart gadgets and accessories</p>
+                </a>
+
+                <a href="#fashion" class="category-card">
+                    <div class="category-icon fashion-icon">👕</div>
+                    <h3>Fashion</h3>
+                    <p>Discover your style</p>
+                </a>
+
+                <a href="#accessories" class="category-card">
+                    <div class="category-icon accessories-icon">⌚</div>
+                    <h3>Accessories</h3>
+                    <p>Complete your look</p>
+                </a>
+
+                <a href="#home-products" class="category-card">
+                    <div class="category-icon home-icon">🏠</div>
+                    <h3>Home & Living</h3>
+                    <p>Make your home beautiful</p>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Promotional Banner -->
+        <section class="promo-banner" id="deals">
+
+            <div class="promo-content">
+                <p class="section-label">LIMITED-TIME OFFER</p>
+
+                <h2>Big Deals. Bigger Savings.</h2>
+
+                <p>
+                    Find your favorite products at special promotional prices.
+                </p>
+
+                <a href="#products" class="primary-button">
+                    Explore Deals →
+                </a>
+            </div>
+
+            <div class="promo-art" aria-hidden="true">
+                <span>🎁</span>
+                <strong>50%</strong>
+                <small>OFF</small>
+            </div>
+
+        </section>
+
+        <!-- Featured Products -->
+        <section class="section products" id="products">
+
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">HANDPICKED FOR YOU</p>
+                    <h2>Featured Products</h2>
+                </div>
+
+                <span class="product-count">8 Products</span>
+            </div>
+
+            <!-- Electronics -->
+            <h3 class="product-category-title" id="electronics">
+                🎧 Electronics
+            </h3>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+
+                    <div class="product-image headphone-bg">
+                        <span class="discount-badge">-30%</span>
+                        <span class="product-emoji">🎧</span>
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Electronics</p>
+
+                        <h3>Wireless Headphones</h3>
+
+                        <p class="description">
+                            Enjoy immersive sound, comfortable ear cushions,
+                            and wireless listening.
+                        </p>
+
+                        <div class="rating">
+                            <span>★★★★★</span>
+                            <small>4.8 (120 reviews)</small>
+                        </div>
+
+                        <div class="price-row">
+                            <strong>₹1,399</strong>
+                            <del>₹1,999</del>
+                        </div>
+
+                        <p class="stock">● In stock</p>
+
+                        <a href="#shopping-note" class="add-button">
+                            🛒 Add to Cart
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="product-card">
+
+                    <div class="product-image watch-bg">
+                        <span class="discount-badge">-25%</span>
+                        <span class="product-emoji">⌚</span>
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Electronics</p>
+
+                        <h3>Smart Watch</h3>
+
+                        <p class="description">
+                            Track your daily activity and stay connected
+                            with smart features.
+                        </p>
+
+                        <div class="rating">
+                            <span>★★★★★</span>
+                            <small>4.6 (95 reviews)</small>
+                        </div>
+
+                        <div class="price-row">
+                            <strong>₹2,249</strong>
+                            <del>₹2,999</del>
+                        </div>
+
+                        <p class="stock">● In stock</p>
+
+                        <a href="#shopping-note" class="add-button">
+                            🛒 Add to Cart
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- Fashion -->
+            <h3 class="product-category-title" id="fashion">
+                👕 Fashion
+            </h3>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+
+                    <div class="product-image tshirt-bg">
+                        <span class="discount-badge">-20%</span>
+                        <span class="product-emoji">👕</span>
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Fashion</p>
+
+                        <h3>Classic Cotton T-Shirt</h3>
+
+                        <p class="description">
+                            A comfortable everyday T-shirt with a simple,
+                            versatile design.
+                        </p>
+
+                        <div class="rating">
+                            <span>★★★★★</span>
+                            <small>4.5 (80 reviews)</small>
+                        </div>
+
+                        <div class="price-row">
+                            <strong>₹399</strong>
+                            <del>₹499</del>
+                        </div>
+
+                        <p class="stock">● In stock</p>
+
+                        <a href="#shopping-note" class="add-button">
+                            🛒 Add to Cart
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="product-card">
+
+                    <div class="product-image shoes-bg">
+                        <span class="discount-badge">-35%</span>
+                        <span class="product-emoji">👟</span>
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Fashion</p>
+
+                        <h3>Casual Sneakers</h3>
+
+                        <p class="description">
+                            Stylish everyday sneakers designed for
+                            comfort and casual outings.
+                        </p>
+
+                        <div class="rating">
+                            <span>★★★★☆</span>
+                            <small>4.3 (67 reviews)</small>
+                        </div>
+
+                        <div class="price-row">
+                            <strong>₹1,299</strong>
+                            <del>₹1,999</del>
+                        </div>
+
+                        <p class="stock">● In stock</p>
+
+                        <a href="#shopping-note" class="add-button">
+                            🛒 Add to Cart
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- Accessories -->
+            <h3 class="product-category-title" id="accessories">
+                ⌚ Accessories
+            </h3>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+
+                    <div class="product-image backpack-bg">
+                        <span class="discount-badge">-15%</span>
+                        <span class="product-emoji">🎒</span>
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Accessories</p>
+
+                        <h3>Everyday Backpack</h3>
+
+                        <p class="description">
+                            A practical backpack for college, travel,
+                            and daily essentials.
+                        </p>
+
+                        <div class="rating">
+                            <span>★★★★★</span>
+                            <small>4.7 (102 reviews)</small>
+                        </div>
+
+                        <div class="price-row">
+                            <strong>₹849</strong>
+                            <del>₹999</del>
+                        </div>
+
+                        <p class="stock">● In stock</p>
+
+                        <a href="#shopping-note" class="add-button">
+                            🛒 Add to Cart
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="product-card">
+
+                    <div class="product-image sunglasses-bg">
+                        <span class="discount-badge">-40%</span>
+                        <span class="product-emoji">🕶️</span>
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Accessories</p>
+
+                        <h3>Classic Sunglasses</h3>
+
+                        <p class="description">
+                            Complete your outfit with these stylish
+                            everyday sunglasses.
+                        </p>
+
+                        <div class="rating">
+                            <span>★★★★☆</span>
+                            <small>4.2 (56 reviews)</small>
+                        </div>
+
+                        <div class="price-row">
+                            <strong>₹599</strong>
+                            <del>₹999</del>
+                        </div>
+
+                        <p class="stock">● In stock</p>
+
+                        <a href="#shopping-note" class="add-button">
+                            🛒 Add to Cart
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- Home & Living -->
+            <h3 class="product-category-title" id="home-products">
+                🏠 Home & Living
+            </h3>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+
+                    <div class="product-image lamp-bg">
+                        <span class="discount-badge">-20%</span>
+                        <span class="product-emoji">💡</span>
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Home & Living</p>
+
+                        <h3>Modern Table Lamp</h3>
+
+                        <p class="description">
+                            Add a warm and elegant touch to your
+                            bedroom or study table.
+                        </p>
+
+                        <div class="rating">
+                            <span>★★★★★</span>
+                            <small>4.6 (42 reviews)</small>
+                        </div>
+
+                        <div class="price-row">
+                            <strong>₹799</strong>
+                            <del>₹999</del>
+                        </div>
+
+                        <p class="stock">● In stock</p>
+
+                        <a href="#shopping-note" class="add-button">
+                            🛒 Add to Cart
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="product-card">
+
+                    <div class="product-image bottle-bg">
+                        <span class="discount-badge">-25%</span>
+                        <span class="product-emoji">🧴</span>
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Home & Living</p>
+
+                        <h3>Reusable Water Bottle</h3>
+
+                        <p class="description">
+                            A convenient reusable bottle for college,
+                            workouts, and travel.
+                        </p>
+
+                        <div class="rating">
+                            <span>★★★★☆</span>
+                            <small>4.4 (73 reviews)</small>
+                        </div>
+
+                        <div class="price-row">
+                            <strong>₹299</strong>
+                            <del>₹399</del>
+                        </div>
+
+                        <p class="stock">● In stock</p>
+
+                        <a href="#shopping-note" class="add-button">
+                            🛒 Add to Cart
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p class="shopping-note" id="shopping-note">
+                This is a frontend demo. Shopping buttons demonstrate the
+                interface and do not add products to a real shopping cart.
+            </p>
+
+        </section>
+
+        <!-- Newsletter Banner -->
+        <section class="newsletter">
+
+            <div>
+                <p class="section-label">STAY UPDATED</p>
+                <h2>Get the Latest Deals!</h2>
+                <p>Discover new arrivals, offers, and shopping inspiration.</p>
+            </div>
+
+            <form class="newsletter-form" action="#" method="get">
+
+                <label class="visually-hidden" for="newsletter-email">
+                    Email address
+                </label>
+
+                <input
+                    type="email"
+                    id="newsletter-email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                >
+
+                <button type="submit">Subscribe</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+
+        <div class="footer-grid">
+
+            <div>
+                <a href="#home" class="logo">
+                    Shop<span>Ease</span>
+                </a>
+
+                <p>
+                    Your destination for everyday shopping.
+                    Discover quality products at great prices.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#products">Products</a>
+                <a href="#deals">Special Offers</a>
+            </div>
+
+            <div>
+                <h3>Customer Service</h3>
+                <a href="#footer">Contact Us</a>
+                <a href="#footer">Shipping Information</a>
+                <a href="#footer">Return Policy</a>
+                <a href="#footer">Privacy Policy</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 ShopEase. E-Commerce Student Project.</p>
+            <p>Designed with HTML & CSS.</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
+```

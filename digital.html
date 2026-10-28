@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BookNest | Digital Library</title>
+
+    <link rel="stylesheet" href="digital.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header" id="home">
+
+        <nav class="navbar">
+
+            <a href="#home" class="logo">📚 BookNest</a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#catalog">Catalog</a></li>
+                <li><a href="#rules">Library Rules</a></li>
+            </ul>
+
+            <a href="#catalog" class="nav-button">Explore Books</a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-label">YOUR DIGITAL READING SPACE</span>
+
+                <h1>
+                    Discover Your Next
+                    <span>Great Read.</span>
+                </h1>
+
+                <p>
+                    Explore a world of knowledge with our digital library.
+                    Discover books about programming, artificial intelligence,
+                    science, literature, and more.
+                </p>
+
+                <a href="#books" class="primary-button">
+                    Explore Collection →
+                </a>
+
+                <div class="library-stats">
+
+                    <div>
+                        <h3>1,200+</h3>
+                        <p>Books</p>
+                    </div>
+
+                    <div>
+                        <h3>8</h3>
+                        <p>Categories</p>
+                    </div>
+
+                    <div>
+                        <h3>24/7</h3>
+                        <p>Online Access</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+
+                <div class="hero-circle"></div>
+
+                <div class="book-stack">
+                    <div class="stack-book stack-one">AI & FUTURE</div>
+                    <div class="stack-book stack-two">PROGRAMMING</div>
+                    <div class="stack-book stack-three">SCIENCE</div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Search and Filters -->
+        <section class="search-section section" id="catalog">
+
+            <div class="section-heading">
+                <p class="section-label">FIND YOUR FAVORITE BOOK</p>
+                <h2>Search the Library</h2>
+                <p>Find books by title, author, category, or availability.</p>
+            </div>
+
+            <form class="search-form" action="#" method="get">
+
+                <label for="book-search">Search books</label>
+
+                <div class="search-row">
+
+                    <input
+                        type="search"
+                        id="book-search"
+                        name="q"
+                        placeholder="Search by title, author, or keyword..."
+                    >
+
+                    <button type="submit">🔍 Search</button>
+
+                </div>
+
+                <div class="filter-row">
+
+                    <div class="filter-group">
+
+                        <label for="category-filter">Category</label>
+
+                        <select id="category-filter" name="category">
+                            <option value="">All Categories</option>
+                            <option value="programming">Programming</option>
+                            <option value="ai">Artificial Intelligence</option>
+                            <option value="science">Science</option>
+                            <option value="literature">Literature</option>
+                            <option value="business">Business</option>
+                        </select>
+
+                    </div>
+
+                    <div class="filter-group">
+
+                        <label for="availability-filter">Availability</label>
+
+                        <select id="availability-filter" name="availability">
+                            <option value="">All Books</option>
+                            <option value="available">Available</option>
+                            <option value="borrowed">Borrowed</option>
+                        </select>
+
+                    </div>
+
+                    <div class="filter-group">
+
+                        <label for="sort-books">Sort By</label>
+
+                        <select id="sort-books" name="sort">
+                            <option value="title">Book Title</option>
+                            <option value="author">Author Name</option>
+                            <option value="year">Publication Year</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <p class="filter-note">
+                    Search and filter controls are interface elements.
+                    Functional filtering requires JavaScript or a backend.
+                </p>
+
+            </form>
+
+        </section>
+
+        <!-- Book Categories -->
+        <section class="categories section" id="categories">
+
+            <div class="section-heading">
+                <p class="section-label">EXPLORE BY INTEREST</p>
+                <h2>Book Categories</h2>
+                <p>Choose a category to explore your interests.</p>
+            </div>
+
+            <div class="category-grid">
+
+                <a href="#programming" class="category-card">
+                    <span>💻</span>
+                    <h3>Programming</h3>
+                    <p>C, Python, Java, Web Development</p>
+                </a>
+
+                <a href="#ai-books" class="category-card">
+                    <span>🤖</span>
+                    <h3>Artificial Intelligence</h3>
+                    <p>AI, Machine Learning, Robotics</p>
+                </a>
+
+                <a href="#science" class="category-card">
+                    <span>🔬</span>
+                    <h3>Science</h3>
+                    <p>Physics, Chemistry, Mathematics</p>
+                </a>
+
+                <a href="#literature" class="category-card">
+                    <span>📖</span>
+                    <h3>Literature</h3>
+                    <p>Novels, Stories, Poetry</p>
+                </a>
+
+                <a href="#business" class="category-card">
+                    <span>📈</span>
+                    <h3>Business</h3>
+                    <p>Management, Finance, Marketing</p>
+                </a>
+
+                <a href="#self-help" class="category-card">
+                    <span>🌱</span>
+                    <h3>Self-Development</h3>
+                    <p>Productivity, Habits, Leadership</p>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Featured Books -->
+        <section class="books-section section" id="books">
+
+            <div class="section-heading">
+                <p class="section-label">HANDPICKED FOR READERS</p>
+                <h2>Featured Books</h2>
+                <p>Discover popular titles from our collection.</p>
+            </div>
+
+            <div class="book-grid">
+
+                <!-- Book 1 -->
+                <article class="book-card" id="python-book">
+
+                    <div class="book-cover cover-python">
+                        <span class="cover-symbol">🐍</span>
+                        <p>THE COMPLETE GUIDE TO</p>
+                        <h3>PYTHON<br>PROGRAMMING</h3>
+                        <span class="cover-line"></span>
+                        <small>LEARN • BUILD • CREATE</small>
+                    </div>
+
+                    <div class="book-info">
+                        <span class="book-category">PROGRAMMING</span>
+                        <h3>Python Programming</h3>
+                        <p class="author">Author: Eric Matthes</p>
+                        <p class="book-description">
+                            Learn Python fundamentals, functions,
+                            object-oriented programming, and projects.
+                        </p>
+
+                        <div class="book-footer">
+                            <span class="available">● Available</span>
+                            <span class="book-id">BK001</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Book 2 -->
+                <article class="book-card" id="ai-books">
+
+                    <div class="book-cover cover-ai">
+                        <span class="cover-symbol">🤖</span>
+                        <p>EXPLORE THE FUTURE</p>
+                        <h3>ARTIFICIAL<br>INTELLIGENCE</h3>
+                        <span class="cover-line"></span>
+                        <small>INTELLIGENCE • INNOVATION</small>
+                    </div>
+
+                    <div class="book-info">
+                        <span class="book-category">ARTIFICIAL INTELLIGENCE</span>
+                        <h3>Artificial Intelligence</h3>
+                        <p class="author">Author: Stuart Russell</p>
+                        <p class="book-description">
+                            Discover intelligent agents, AI principles,
+                            machine learning, and problem-solving.
+                        </p>
+
+                        <div class="book-footer">
+                            <span class="borrowed">● Borrowed</span>
+                            <span class="book-id">BK002</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Book 3 -->
+                <article class="book-card" id="science">
+
+                    <div class="book-cover cover-science">
+                        <span class="cover-symbol">🔬</span>
+                        <p>UNDERSTANDING OUR WORLD</p>
+                        <h3>THE WORLD<br>OF SCIENCE</h3>
+                        <span class="cover-line"></span>
+                        <small>DISCOVER • EXPLORE</small>
+                    </div>
+
+                    <div class="book-info">
+                        <span class="book-category">SCIENCE</span>
+                        <h3>The World of Science</h3>
+                        <p class="author">Author: Sample Collection</p>
+                        <p class="book-description">
+                            Explore scientific concepts, discoveries,
+                            experiments, and the natural world.
+                        </p>
+
+                        <div class="book-footer">
+                            <span class="available">● Available</span>
+                            <span class="book-id">BK003</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Book 4 -->
+                <article class="book-card" id="literature">
+
+                    <div class="book-cover cover-literature">
+                        <span class="cover-symbol">📖</span>
+                        <p>STORIES THAT INSPIRE</p>
+                        <h3>GREAT<br>LITERATURE</h3>
+                        <span class="cover-line"></span>
+                        <small>IMAGINE • FEEL • GROW</small>
+                    </div>
+
+                    <div class="book-info">
+                        <span class="book-category">LITERATURE</span>
+                        <h3>Great Literature</h3>
+                        <p class="author">Author: Sample Collection</p>
+                        <p class="book-description">
+                            Experience memorable stories, creative writing,
+                            poetry, and classic literature.
+                        </p>
+
+                        <div class="book-footer">
+                            <span class="available">● Available</span>
+                            <span class="book-id">BK004</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Book 5 -->
+                <article class="book-card" id="business">
+
+                    <div class="book-cover cover-business">
+                        <span class="cover-symbol">📈</span>
+                        <p>BUILD YOUR KNOWLEDGE</p>
+                        <h3>BUSINESS<br>STRATEGY</h3>
+                        <span class="cover-line"></span>
+                        <small>PLAN • LEAD • SUCCEED</small>
+                    </div>
+
+                    <div class="book-info">
+                        <span class="book-category">BUSINESS</span>
+                        <h3>Business Strategy</h3>
+                        <p class="author">Author: Sample Collection</p>
+                        <p class="book-description">
+                            Learn about management, leadership,
+                            business planning, and decision-making.
+                        </p>
+
+                        <div class="book-footer">
+                            <span class="borrowed">● Borrowed</span>
+                            <span class="book-id">BK005</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Book 6 -->
+                <article class="book-card" id="self-help">
+
+                    <div class="book-cover cover-growth">
+                        <span class="cover-symbol">🌱</span>
+                        <p>YOUR JOURNEY STARTS HERE</p>
+                        <h3>PERSONAL<br>GROWTH</h3>
+                        <span class="cover-line"></span>
+                        <small>LEARN • IMPROVE • ACHIEVE</small>
+                    </div>
+
+                    <div class="book-info">
+                        <span class="book-category">SELF-DEVELOPMENT</span>
+                        <h3>Personal Growth</h3>
+                        <p class="author">Author: Sample Collection</p>
+                        <p class="book-description">
+                            Explore productive habits, goal setting,
+                            motivation, and personal development.
+                        </p>
+
+                        <div class="book-footer">
+                            <span class="available">● Available</span>
+                            <span class="book-id">BK006</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Catalog Table -->
+        <section class="catalog-section section">
+
+            <div class="section-heading">
+                <p class="section-label">LIBRARY RECORDS</p>
+                <h2>Complete Book Catalog</h2>
+                <p>View book information in a structured table.</p>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <caption>Digital Library Book Catalog — Sample Records</caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Book ID</th>
+                            <th scope="col">Book Title</th>
+                            <th scope="col">Author</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Year</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>BK001</td>
+                            <td>Python Programming</td>
+                            <td>Eric Matthes</td>
+                            <td>Programming</td>
+                            <td>2019</td>
+                            <td><span class="available">Available</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>BK002</td>
+                            <td>Artificial Intelligence</td>
+                            <td>Stuart Russell</td>
+                            <td>AI</td>
+                            <td>2020</td>
+                            <td><span class="borrowed">Borrowed</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>BK003</td>
+                            <td>The World of Science</td>
+                            <td>Sample Collection</td>
+                            <td>Science</td>
+                            <td>2022</td>
+                            <td><span class="available">Available</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>BK004</td>
+                            <td>Great Literature</td>
+                            <td>Sample Collection</td>
+                            <td>Literature</td>
+                            <td>2021</td>
+                            <td><span class="available">Available</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>BK005</td>
+                            <td>Business Strategy</td>
+                            <td>Sample Collection</td>
+                            <td>Business</td>
+                            <td>2023</td>
+                            <td><span class="borrowed">Borrowed</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>BK006</td>
+                            <td>Personal Growth</td>
+                            <td>Sample Collection</td>
+                            <td>Self-Development</td>
+                            <td>2024</td>
+                            <td><span class="available">Available</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- Library Rules -->
+        <section class="rules-section section" id="rules">
+
+            <div class="section-heading">
+                <p class="section-label">READ RESPONSIBLY</p>
+                <h2>Library Rules & Regulations</h2>
+                <p>Follow these rules to maintain a helpful learning environment.</p>
+            </div>
+
+            <div class="rules-grid">
+
+                <article class="rule-card">
+                    <span>📅</span>
+                    <h3>Borrowing Period</h3>
+                    <p>Return borrowed books within the assigned loan period.</p>
+                </article>
+
+                <article class="rule-card">
+                    <span>📚</span>
+                    <h3>Handle Books Carefully</h3>
+                    <p>Keep books clean and avoid damaging pages or covers.</p>
+                </article>
+
+                <article class="rule-card">
+                    <span>🤫</span>
+                    <h3>Maintain Silence</h3>
+                    <p>Respect other readers by keeping noise to a minimum.</p>
+                </article>
+
+                <article class="rule-card">
+                    <span>⏰</span>
+                    <h3>Return on Time</h3>
+                    <p>Return books by their due dates to avoid possible fines.</p>
+                </article>
+
+                <article class="rule-card">
+                    <span>💻</span>
+                    <h3>Digital Responsibility</h3>
+                    <p>Use digital resources responsibly and respect copyright.</p>
+                </article>
+
+                <article class="rule-card">
+                    <span>🪪</span>
+                    <h3>Library Membership</h3>
+                    <p>Use your valid library membership when borrowing books.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Membership Banner -->
+        <section class="membership-banner">
+
+            <div>
+                <p class="section-label">KNOWLEDGE IS YOUR SUPERPOWER</p>
+                <h2>Read More. Learn More. Grow More.</h2>
+                <p>Make reading a daily habit and explore new ideas.</p>
+            </div>
+
+            <a href="#catalog" class="membership-button">
+                Browse Books →
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+                <a href="#home" class="logo footer-logo">📚 BookNest</a>
+
+                <p>
+                    A digital library interface designed to make discovering
+                    books simple, organized, and enjoyable.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#books">Featured Books</a>
+                <a href="#catalog">Book Catalog</a>
+            </div>
+
+            <div>
+                <h3>Library Information</h3>
+                <a href="#rules">Library Rules</a>
+                <a href="#catalog">Availability</a>
+                <a href="#home">About BookNest</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 BookNest Digital Library</p>
+            <p>Student Web Development Project | HTML & CSS</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
+
